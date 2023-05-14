@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seguimiento14.RegisterController">
+   <children>
+      <Label layoutX="111.0" layoutY="38.0" text="Register">
+         <font>
+            <Font name="Bodoni MT Poster Compressed" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="addEarningsId" layoutX="81.0" layoutY="271.0" mnemonicParsing="false" onAction="#addEarning" text="Earnings" />
+      <Button fx:id="addBillsId" layoutX="172.0" layoutY="271.0" mnemonicParsing="false" onAction="#addBills" text="Bills" />
+      <TextField fx:id="amountText" layoutX="76.0" layoutY="119.0" promptText="Amount" />
+      <TextField fx:id="descrptionText" layoutX="76.0" layoutY="165.0" promptText="Short description" />
+   </children>
+</AnchorPane>

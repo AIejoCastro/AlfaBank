@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seguimiento14.TableController">
+   <children>
+      <Label layoutX="176.0" layoutY="48.0" text="Balance">
+         <font>
+            <Font name="Bauhaus 93" size="31.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="28.0" layoutY="119.0" prefHeight="200.0" prefWidth="401.0">
+        <columns>
+          <TableColumn fx:id="balanceDescription" prefWidth="100.0" text="Description" />
+          <TableColumn fx:id="balanceAmount" prefWidth="99.0" text="Amount" />
+            <TableColumn fx:id="balanceEarning" prefWidth="99.0" text="Earning" />
+            <TableColumn fx:id="balanceDate" prefWidth="99.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="backBttn" layoutX="28.0" layoutY="346.0" mnemonicParsing="false" onAction="#back" text="&lt;-----" />
+   </children>
+</AnchorPane>
